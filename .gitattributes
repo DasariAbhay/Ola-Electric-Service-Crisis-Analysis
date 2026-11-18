@@ -1,0 +1,10 @@
+*.sql text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.html text eol=lf
+*.pbix binary
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.xlsx binary
+*.png binary

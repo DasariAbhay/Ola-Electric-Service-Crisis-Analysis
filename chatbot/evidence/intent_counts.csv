@@ -1,0 +1,14 @@
+"reporting_group","ticket_count","share_of_all_tickets_pct","multiple_intent_matches","missing_text_tickets"
+"Battery / range",31687,24.12,8687,0
+"Safety review",30873,23.50,0,0
+"Escalation / service delay",26310,20.03,5096,0
+"Software / display",12130,9.23,0,0
+"Charger / charging",11831,9.01,0,0
+"App / connectivity",6481,4.93,1610,0
+"Motor / drivetrain",6136,4.67,0,0
+"Refund / billing",5918,4.50,0,0
+"Book service slot",0,0.00,0,0
+"Nearest service centre",0,0.00,0,0
+"Ticket status",0,0.00,0,0
+"Unclassified",0,0.00,0,0
+"Warranty coverage",0,0.00,0,0

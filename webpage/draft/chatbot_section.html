@@ -1,0 +1,258 @@
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">Final historical classification</h3>
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+            <caption class="text-left text-muted mb-4">
+                Each ticket receives one primary reporting group.
+                Safety screening takes precedence over routine routing.
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="p-3 border-b border-border">Reporting group</th>
+                    <th scope="col" class="p-3 border-b border-border text-right">Tickets</th>
+                    <th scope="col" class="p-3 border-b border-border text-right">Share</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Battery / range</th>
+                    <td class="p-3 border-b border-border text-right">31,687</td>
+                    <td class="p-3 border-b border-border text-right">24.12%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Safety review</th>
+                    <td class="p-3 border-b border-border text-right">30,873</td>
+                    <td class="p-3 border-b border-border text-right">23.50%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Escalation / service delay</th>
+                    <td class="p-3 border-b border-border text-right">26,310</td>
+                    <td class="p-3 border-b border-border text-right">20.03%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Software / display</th>
+                    <td class="p-3 border-b border-border text-right">12,130</td>
+                    <td class="p-3 border-b border-border text-right">9.23%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Charger / charging</th>
+                    <td class="p-3 border-b border-border text-right">11,831</td>
+                    <td class="p-3 border-b border-border text-right">9.01%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">App / connectivity</th>
+                    <td class="p-3 border-b border-border text-right">6,481</td>
+                    <td class="p-3 border-b border-border text-right">4.93%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Motor / drivetrain</th>
+                    <td class="p-3 border-b border-border text-right">6,136</td>
+                    <td class="p-3 border-b border-border text-right">4.67%</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="p-3 border-b border-border font-normal">Refund / billing</th>
+                    <td class="p-3 border-b border-border text-right">5,918</td>
+                    <td class="p-3 border-b border-border text-right">4.50%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" class="p-3">Total</th>
+                    <td class="p-3 text-right">131,366</td>
+                    <td class="p-3 text-right">100%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p class="text-muted text-sm mt-4">
+        No tickets remain unclassified under the final rules. This measures
+        classification coverage, not classification accuracy or successful
+        chatbot resolution. Displayed percentages may differ slightly from
+        100% when added because of rounding.
+    </p>
+    <p class="text-muted text-sm mt-3">
+        Ticket status, service booking, service-centre search and warranty
+        coverage remain additional support functions. Their rules matched
+        zero historical tickets, so they are not presented as historically
+        demonstrated top intents.
+    </p>
+    <p class="text-sm mt-4">
+        Upload instruction: add chatbot_intent_counts_final.csv as the
+        supporting classification export.
+    </p>
+</article>
+
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">What changed after reviewing complaint examples</h3>
+    <ul class="list-disc pl-5 space-y-3 text-muted">
+        <li>
+            Added unavailable slots, missed pickups, missing updates and
+            tickets closed without work to service-delay routing.
+        </li>
+        <li>
+            Prioritised explicit key-sharing problems over generic
+            software-update mentions.
+        </li>
+        <li>
+            Retained BMS errors under Battery / range when the display
+            merely reports the underlying problem.
+        </li>
+        <li>
+            Expanded historical safety screening to include sparking,
+            severe handle vibration, unintended vehicle operation,
+            sudden power loss while riding and motor overheating warnings.
+        </li>
+    </ul>
+    <p class="text-muted text-sm mt-4">
+        The 30,873 safety matches are screening candidates. Keyword
+        classification does not establish that every record is a confirmed
+        emergency. Conversational safety handling requires a clearly
+        reported hazard and must account for negation and context.
+    </p>
+</article>
+
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">Illustrative estimated deflection: 8.39%</h3>
+    <p class="text-muted mb-4">
+        The reported stratified review covered 100 historical synthetic
+        complaints across Battery / range, Software / display,
+        Charger / charging and App / connectivity. These groups contain
+        62,129 tickets, representing 47.29% of the full corpus.
+    </p>
+    <dl class="space-y-4">
+        <div>
+            <dt class="font-semibold">Weighted eligible-request share</dt>
+            <dd class="text-muted">
+                13.98% of all historical tickets, based on the reported
+                sample review and weighting by historical group size.
+            </dd>
+        </div>
+        <div>
+            <dt class="font-semibold">Central resolution assumption</dt>
+            <dd class="text-muted">
+                60% of eligible requests successfully resolved through
+                self-service. This is an explicit assumption, not an
+                observed operational rate.
+            </dd>
+        </div>
+        <div>
+            <dt class="font-semibold">Illustrative estimated deflection</dt>
+            <dd class="text-muted">
+                13.98% eligible share multiplied by 60% assumed resolution
+                gives approximately 8.39%.
+            </dd>
+        </div>
+        <div>
+            <dt class="font-semibold">Sensitivity range</dt>
+            <dd class="text-muted">
+                Assuming 40%–80% resolution produces approximately
+                5.59%–11.19% estimated deflection.
+            </dd>
+        </div>
+    </dl>
+    <p class="text-muted text-sm mt-5">
+        Safety cases and requests requiring operational or physical
+        intervention are excluded. These are planning estimates, not
+        measured avoided contacts, realised savings or population-level
+        performance. The small sample, rule-based grouping and repetitive
+        synthetic text limit generalisation.
+    </p>
+    <p class="text-sm mt-4">
+        Verification instruction: upload the reviewed sample and calculation
+        workbook. Check the reported 11,021 ticket-equivalents using
+        unrounded calculations before displaying that count; using the
+        rounded 13.98% eligibility figure gives approximately 11,019.
+    </p>
+</article>
+
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">Demonstrated capabilities and operational limits</h3>
+    <ul class="list-disc pl-5 space-y-3 text-muted">
+        <li>
+            Ticket lookup uses five fictional records and labels results
+            as simulated. Unknown IDs must not produce invented statuses.
+        </li>
+        <li>
+            Service-centre lookup returns project listings matched by city.
+            It does not establish the nearest location or live appointment
+            availability.
+        </li>
+        <li>
+            Recorded capacity is measured in jobs per day. It is not the
+            number of appointment slots currently available.
+        </li>
+        <li>
+            Booking guidance explains the supplied process; the demo does
+            not reserve appointments or issue booking confirmations.
+        </li>
+        <li>
+            Human handoff reached Botpress Desk, an agent replied, and
+            closing the conversation returned control to the chatbot,
+            according to the completed walkthrough.
+        </li>
+        <li>
+            Human chat transfer does not confirm a callback, repair,
+            refund, service appointment or operational ticket creation.
+        </li>
+    </ul>
+</article>
+
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">Safety handoff demonstration</h3>
+    <p class="text-muted">
+        The demonstration prioritises safety guidance before routine
+        assistance and transfers the conversation for human review.
+        Safety handling is excluded from deflection estimates.
+    </p>
+    <p class="text-sm mt-4">
+        Placement instruction: upload P1-Safety-Handoff.png on the right
+        side of the chatbot findings layout. Caption it:
+        “Student-project simulation: safety escalation to a human agent.”
+    </p>
+    <p class="text-sm mt-3">
+        Interaction instruction: add the supplied Botpress webchat
+        integration separately when implementing the live demonstration.
+        Identify it clearly as a student-project demo.
+    </p>
+</article>
+
+<article class="bg-card border border-border rounded-xl p-6">
+    <h3 class="text-lg font-semibold mb-4">Conversation evaluation and supporting material</h3>
+    <p class="text-muted">
+        Fifteen screenshot-based conversations have been supplied for
+        review. Test outcomes must distinguish correct answers, simulated
+        lookups, honest limitations and required handoffs. A playbook-start
+        pass badge alone does not establish successful task completion.
+    </p>
+    <ul class="list-disc pl-5 space-y-3 mt-4">
+        <li>
+            Upload the final one-page chatbot intent design document,
+            including entities, routing priorities, limitations and the
+            deflection methodology.
+        </li>
+        <li>
+            Upload the compiled 15-conversation screenshot document with
+            test outcomes and replacement retests for first-request
+            human handoff.
+        </li>
+        <li>
+            Label the unknown-ticket example “Ticket Status – Unknown
+            Ticket” and the fifteenth example “Battery Range – Policy
+            Clarification.”
+        </li>
+        <li>
+            Upload the reviewed 100-ticket eligibility sample and weighted
+            calculation workbook, retaining the 40%, 60% and 80%
+            resolution assumptions.
+        </li>
+        <li>
+            Update the report and presentation to use the same final
+            chatbot figures and limitations. Replace the earlier 18%
+            planning assumption wherever it remains.
+        </li>
+    </ul>
+    <p class="text-muted text-sm mt-4">
+        Screenshot evidence is the selected submission format.
+        No demonstration recording is planned.
+    </p>
+</article>
